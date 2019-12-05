@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoTIFFLib", "GeoTIFFLib\GeoTIFFLib.vcxproj", "{D8EE8665-AC10-4560-8158-13A1AE6D86E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoTiffDll", "GeoTiffDll\GeoTiffDll.vcxproj", "{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{C8B36D2A-A4EF-4E03-83EF-785F74E59E75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplyGeo", "ApplyGeo\ApplyGeo.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoTiffCp", "GeoTiffCp\GeoTiffCp.vcxproj", "{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListGeo", "ListGeo\ListGeo.vcxproj", "{62449B60-841D-4CB7-B647-09B34184BC82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MakeGeo", "MakeGeo\MakeGeo.vcxproj", "{F3249984-3F77-483E-889B-EE8E8E2D8B5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8EE8665-AC10-4560-8158-13A1AE6D86E0}.Debug|x64.ActiveCfg = Debug|x64
+		{D8EE8665-AC10-4560-8158-13A1AE6D86E0}.Debug|x64.Build.0 = Debug|x64
+		{D8EE8665-AC10-4560-8158-13A1AE6D86E0}.Release|x64.ActiveCfg = Release|x64
+		{D8EE8665-AC10-4560-8158-13A1AE6D86E0}.Release|x64.Build.0 = Release|x64
+		{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}.Debug|x64.ActiveCfg = Debug|x64
+		{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}.Debug|x64.Build.0 = Debug|x64
+		{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}.Release|x64.ActiveCfg = Release|x64
+		{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}.Release|x64.Build.0 = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
+		{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061}.Debug|x64.ActiveCfg = Debug|x64
+		{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061}.Debug|x64.Build.0 = Debug|x64
+		{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061}.Release|x64.ActiveCfg = Release|x64
+		{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061}.Release|x64.Build.0 = Release|x64
+		{62449B60-841D-4CB7-B647-09B34184BC82}.Debug|x64.ActiveCfg = Debug|x64
+		{62449B60-841D-4CB7-B647-09B34184BC82}.Debug|x64.Build.0 = Debug|x64
+		{62449B60-841D-4CB7-B647-09B34184BC82}.Release|x64.ActiveCfg = Release|x64
+		{62449B60-841D-4CB7-B647-09B34184BC82}.Release|x64.Build.0 = Release|x64
+		{F3249984-3F77-483E-889B-EE8E8E2D8B5E}.Debug|x64.ActiveCfg = Debug|x64
+		{F3249984-3F77-483E-889B-EE8E8E2D8B5E}.Debug|x64.Build.0 = Debug|x64
+		{F3249984-3F77-483E-889B-EE8E8E2D8B5E}.Release|x64.ActiveCfg = Release|x64
+		{F3249984-3F77-483E-889B-EE8E8E2D8B5E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B12702AD-ABFB-343A-A199-8E24837244A3} = {C8B36D2A-A4EF-4E03-83EF-785F74E59E75}
+		{0B96C1C6-6271-4CEF-B9FB-698F1C6D8061} = {C8B36D2A-A4EF-4E03-83EF-785F74E59E75}
+		{62449B60-841D-4CB7-B647-09B34184BC82} = {C8B36D2A-A4EF-4E03-83EF-785F74E59E75}
+		{F3249984-3F77-483E-889B-EE8E8E2D8B5E} = {C8B36D2A-A4EF-4E03-83EF-785F74E59E75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F46A8FF3-8B9F-4EB6-96E0-7D37D8BE6CE3}
+	EndGlobalSection
+EndGlobal
