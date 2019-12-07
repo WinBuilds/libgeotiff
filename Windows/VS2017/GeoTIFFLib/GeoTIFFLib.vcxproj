@@ -72,6 +72,12 @@
       <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_TIFF=1;WIN64;QT_DLL;QT_CORE_LIB;GEOTIFFLIB_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</Define>
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\;..\..\..\libxtiff;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libtiff;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
+    <PostBuildEvent>
+      <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\libxtiff\xtiffio.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\*.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\*.inc" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -93,6 +99,12 @@
       <Define>UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNING;_SCL_SECURE_NO_WARNINGS;HAVE_TIFF=1;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;GEOTIFFLIB_LIB;BUILD_STATIC;%(PreprocessorDefinitions)</Define>
       <IncludePath>.;.\GeneratedFiles;.\GeneratedFiles\$(ConfigurationName);..\..\..\;..\..\..\libxtiff;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libtiff;$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\proj;$(QTDIR)\include;$(QTDIR)\include\QtCore;%(AdditionalIncludeDirectories)</IncludePath>
     </QtMoc>
+    <PostBuildEvent>
+      <Command>mkdir "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\libxtiff\xtiffio.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\*.h" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"
+copy "$(SolutionDir)..\..\*.inc" "$(WINBUILDS_ROOT)build_msvc15_$(Platform)\$(Configuration)\include\libgeotiff\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\cpl_serv.c" />

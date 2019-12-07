@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoTIFFLib", "GeoTIFFLib\GeoTIFFLib.vcxproj", "{D8EE8665-AC10-4560-8158-13A1AE6D86E0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GeoTiffDll", "GeoTiffDll\GeoTiffDll.vcxproj", "{4F2C6F58-5417-4A0E-91E0-4C467CB99AA2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D8EE8665-AC10-4560-8158-13A1AE6D86E0} = {D8EE8665-AC10-4560-8158-13A1AE6D86E0}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{C8B36D2A-A4EF-4E03-83EF-785F74E59E75}"
 EndProject
